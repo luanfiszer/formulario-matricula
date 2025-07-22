@@ -63,5 +63,29 @@
 }
 
 .text-sm {
-    font: 400 var(--text-sm)/1.4 var(--font-family);
+  font: 400 var(--text-sm)/1.4 var(--font-family);
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 0.5rem;
+}
+
+.gap-24 {
+  gap: 1.5rem;
 }
