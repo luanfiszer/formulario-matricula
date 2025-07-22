@@ -21,12 +21,19 @@ aside {
     
     .aside-container {
         display: flex;
-        justify-content: center; !important
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
         position: fixed;
-        padding: 4rem;
+        padding: 3rem 4rem;
+        
     }
 
-    div {
+    .icon-img {
+        width: 100%;
+    }
+
+    .ilustration-img {
         margin: auto;
         max-width: 100%;
         min-width: 15rem;

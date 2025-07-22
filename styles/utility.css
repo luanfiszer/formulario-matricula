@@ -37,28 +37,28 @@
 .text-heading1 {
   font-size: var(--heading1-size);
   line-height: var(--heading-line-height);
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family);
 }
 
 .text-heading2 {
   font-size: var(--heading2-size);
   line-height: var(--heading-line-height);
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family);
 }
 
 .text-heading3 {
   font-size: var(--heading3-size);
   line-height: var(--heading-line-height);
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family);
 }
 
 .text-heading4 {
   font-size: var(--heading4-size);
   line-height: var(--heading-line-height);
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family);
 }
 
