@@ -1,0 +1,67 @@
+/* Backgrounds */
+.bg-brand-light     { background-color: var(--brand-light); }
+.bg-brand-mid       { background-color: var(--brand-mid); }
+.bg-brand-dark      { background-color: var(--brand-dark); }
+
+.bg-surface-primary   { background-color: var(--surface-primary); }
+.bg-surface-secondary { background-color: var(--surface-secondary); }
+.bg-surface-disabled  { background-color: var(--surface-disabled); }
+
+.bg-orange { background-color: var(--orange); }
+.bg-yellow { background-color: var(--yellow); }
+.bg-green  { background-color: var(--green); }
+.bg-blue   { background-color: var(--blue); }
+.bg-violet { background-color: var(--violet); }
+.bg-pink   { background-color: var(--pink); }
+
+/* Text Colors */
+.text-primary     { color: var(--text-primary); }
+.text-secondary   { color: var(--text-secondary); }
+.text-tertiary    { color: var(--text-tertiary); }
+.text-highlight   { color: var(--text-highlight); }
+.text-error       { color: var(--semantic-error); }
+
+.text-orange { color: var(--orange); }
+.text-yellow { color: var(--yellow); }
+.text-green  { color: var(--green); }
+.text-blue   { color: var(--blue); }
+.text-violet { color: var(--violet); }
+.text-pink   { color: var(--pink); }
+
+/* Borders */
+.border-stroke-default   { border: 1px solid var(--stroke-default); }
+.border-stroke-highlight { border: 1px solid var(--stroke-highlight); }
+.border-error            { border: 1px solid var(--semantic-error); }
+
+/*Fonts*/
+.text-heading1 {
+  font-size: var(--heading1-size);
+  line-height: var(--heading-line-height);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+
+.text-heading2 {
+  font-size: var(--heading2-size);
+  line-height: var(--heading-line-height);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+
+.text-heading3 {
+  font-size: var(--heading3-size);
+  line-height: var(--heading-line-height);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+
+.text-heading4 {
+  font-size: var(--heading4-size);
+  line-height: var(--heading-line-height);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+
+.text-sm {
+    font: 400 var(--text-sm)/1.4 var(--font-family);
+}
