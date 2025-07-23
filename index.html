@@ -13,34 +13,42 @@
 </head>
 <body>
     <div id="app">
-        <div id="main-container" class=" flex column gap-24">
-            <nav class="flex gap-8">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 12H20" stroke="#8F8881" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8.99996 17C8.99996 17 4.00001 13.3176 4 12C3.99999 10.6824 9 7 9 7" stroke="#8F8881" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="text-secondary ">Voltar</span>
-            </nav>
-            <header class="flex column gap-8">
-                <h1 class="text-heading1 text-primary">Formulário de matrícula</h1>
-                <p class="text-secondary">Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-            </header>
-        </div>
-        
-        <aside>
+        <aside class="bg-surface-secondary">
                 <header class="aside-container">
                     <div class="icon-img">
                         <img src="assets/Frame 48095956.png" alt="">
                     </div>
                     <div>
-                        <h2 class="text-heading1">Porque cada momento de <span class="text-highlight">aprendizado</span> conta</h1>
+                        <h2 class="text-heading1 text-primary">Porque cada momento de <span class="text-highlight">aprendizado</span> conta</h1>
                         <p class="text-secondary">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
                     </div>
                     <div class="ilustration-img">
-                            <img src="assets/Illustration-lg.png" alt="">
+                            <img src="assets/Illustration-md.png" alt="Ilustração de uma professora com crianças prestando atenção">
                     </div>
                 </header>
         </aside>
+
+        <main id="main-container" class=" flex column gap-24">
+            <nav class="flex gap-8">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20" stroke="#8F8881" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.99996 17C8.99996 17 4.00001 13.3176 4 12C3.99999 10.6824 9 7 9 7" stroke="#8F8881" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </nav>
+            <header class="flex column gap-8">
+                <h2 class="text-heading2 text-primary">Formulário de matrícula</h1>
+                <p class="text-secondary">Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+            </header>
+            <section>
+                <h3>Informações da criança</h3>
+                <form action="">
+                    <input type="text">
+                </form>
+            </section>
+        </main>
+        
+
     </div>
 </body>
 </html>

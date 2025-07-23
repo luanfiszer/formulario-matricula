@@ -1,0 +1,26 @@
+aside {
+        grid-area: B;
+        
+        .aside-container{
+            padding: 4rem;
+            position: fixed;
+        }
+
+        .icon-img {
+                width: 100%;
+            }
+
+            .ilustration-img {
+                margin: auto;
+                max-width: 100%;
+                min-width: 15rem;
+                height: auto;
+                padding: 0.5rem;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+    }

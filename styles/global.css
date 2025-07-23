@@ -11,7 +11,7 @@
     --heading2-size: 1.5rem;
     --heading3-size: 1.25rem;
     --heading4-size: 1rem;
-    --heading-line-height: 120%;
+    --heading-line-height: 125%;
     --text-sm: 0.875rem;
     
     --brand-light: #F67841;
@@ -44,6 +44,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
     font-family: 'Poppins', sans-serif;
+    color: var(--text-secondary);
 }

@@ -1,39 +1,46 @@
 #app {
     display: grid;
     grid-template-columns: 51.25% 48.75%;
+    grid-template-areas: "A B";
     
-    height: 100vh;
-    overflow: hidden;
-}
+    min-height: 100vh;
+    overflow: auto;
+
+    
 
 
-aside {
-    background-color: var(--surface-secondary);
-    
-    .aside-container {
+
+
+    @media (max-width: 900px) {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        position: fixed;
-        padding: 4rem;
+        flex-direction: column;
+        height: 100vh;
         
-    }
 
-    .icon-img {
-        width: 100%;
-    }
+        aside {
+            background-color: var(--surface-secondary);
+            
+            .aside-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 2rem;
+                position: unset;
+                padding: 2rem;
+                
+            }
 
-    .ilustration-img {
-        margin: auto;
-        max-width: 100%;
-        min-width: 15rem;
-        height: auto;
-        
-        img {
-            width: 100%;
-            height: auto;
-            margin: auto;
+            
         }
+
+        #main-container {
+                    padding: 2rem;
+                    max-width: 33rem;
+                    
+                }
     }
+
+
+
 }
