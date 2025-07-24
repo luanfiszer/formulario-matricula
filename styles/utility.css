@@ -66,6 +66,14 @@
   font: 400 var(--text-sm)/1.4 var(--font-family);
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-col {
+  grid-template-columns: 2fr 1fr;
+}
+
 .flex {
   display: flex;
 }
@@ -90,6 +98,22 @@
   gap: 1.5rem;
 }
 
+.gap-20 {
+  gap: 1.25rem;
+}
+
+.gap-48 {
+  gap: 3rem;
+}
+
 .m-bottom-24 {
   margin-bottom: 1.5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
