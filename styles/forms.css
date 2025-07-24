@@ -1,0 +1,34 @@
+form {
+    margin-top: 3rem;
+}
+
+fieldset {
+    border: none;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.calendar {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../assets/icons/calendar-03.svg)
+        center/contain;
+        right: 1rem;
+    }
+}

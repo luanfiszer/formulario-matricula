@@ -43,19 +43,19 @@
             <section>
                 <form action="" method="post" enctype="multipart/form-data"> 
                     <fieldset>
-                        <legend>Informações da criança</legend>
+                        <legend class="text-heading3 text-primary m-bottom-24">Informações da criança</legend>
 
                         <div class="input-wrapper">
                             <label for="fullname">Nome Completo</label>
-                            <input id="fullname" type="text" placeholder="Qual o nome da criança">
+                            <input id="fullname" class="form-control" type="text" placeholder="Qual o nome da criança">
                         </div>
                         <div class="input-wrapper">
                             <label for="birth">Data de Nascimento</label>
-                            <input id="birth" type="date" lang="pt-br">
+                            <input id="birth" class="form-control calendar" type="date" lang="pt-br">
                         </div>
                         <div class="input-wrapper">
                             <label for="gender">Sexo</label>
-                            <select  id="gender" name="gender">
+                            <select  id="gender" class="form-control" name="gender">
                                 <option value="male">Masculino</option>
                                 <option value="female">Feminino</option>option>
                                 <option value="no">Prefiro não responder</option>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="textarea-wrapper">
                             <label for="medical-info">Informaçoes médicas</label>
-                            <textarea id="medical-info" name="medical-info"  
+                            <textarea id="medical-info" class="form-control" name="medical-info"  
                             rols="10" 
                             cols="30" 
                             placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)">
@@ -71,7 +71,7 @@
                         </div>
                         <div class="droparea-wrapper">
                             <label for="">Certidão de Nascimento</label>
-                            <input id="" type="file" >
+                            <input id="" class="form-control" type="file" >
                             <img src="assets/icons/cloud-upload.svg" alt="">
                             <p>Clique aqui para <br>selecioanr arquivos</p>
                         </div>
@@ -79,8 +79,6 @@
                 </form>
             </section>
         </main>
-        
-
     </div>
 </body>
 </html>
