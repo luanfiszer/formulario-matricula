@@ -58,7 +58,7 @@ body {
     padding: .75rem 1rem;
     font: var(--text-sm);
     
-    &:focus {
+    &:focus-within {
         outline: .25rem solid var(--surface-secondary);
         border: .125rem solid var(--stroke-highlight);
         outline-offset: .1px;
