@@ -111,13 +111,14 @@ label + .radio-wrapper {
 
     display: grid;
     justify-content: center;
+    justify-items: center;
 
      .radio-image {
             background-image: url(../assets/icons/circle-0.png);
             width: 1.5rem;
             height: 1.5rem;
             position: absolute;
-            inset: 1rem;
+            inset: .5rem;
         }
 
     
@@ -130,7 +131,7 @@ label + .radio-wrapper {
             width: 1.5rem;
             height: 1.5rem;
             position: absolute;
-            inset: 1rem;
+            inset: .5rem;
 
         
         }
@@ -145,7 +146,7 @@ label + .radio-wrapper {
             width: 1.5rem;
             height: 1.5rem;
             position: absolute;
-            inset: 1rem;
+            inset: .5rem;
         }
         
      }
