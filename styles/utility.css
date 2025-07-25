@@ -70,9 +70,13 @@
   display: grid;
 }
 
-.grid-col {
+.grid-col2-1 {
   grid-template-columns: 2fr 1fr;
   
+}
+
+.grid-col1-1 {
+  grid-template-columns: 1fr 1fr;
 }
 
 .flex {
@@ -93,6 +97,10 @@
 
 .gap-8 {
   gap: 0.5rem;
+}
+
+.gap-16 {
+  gap: 1rem;
 }
 
 .gap-24 {

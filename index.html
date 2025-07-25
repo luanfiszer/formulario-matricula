@@ -116,7 +116,7 @@
                             >
                         </div>
 
-                        <div class="grid grid-col gap-20">
+                        <div class="grid grid-col2-1 gap-20">
                             <div class="input-wrapper">
                             <label for="street">Rua</label>
                             <input 
@@ -199,6 +199,46 @@
                             class="form-control"
                             pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="enroll-options">
+                        <legend class="text-heading3 text-primary m-bottom-24">Opções de matrícula</legend>
+
+                        <div class="input-wrapper">
+                            <label>Selecione o turno de estudo</label>
+                            
+                            <div class="radio-wrapper ">
+                                <div class="radio-inner ">
+                                    <div class="radio-image"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D6D3D1" stroke-width="1.5" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                    <input 
+                                    type="radio" 
+                                    name="study-shift" 
+                                    id="morning"
+                                    value="Morning"
+                                    >
+                                    <img src="assets/icons/sun-02.svg" alt="">
+                                    <label for="morning">Manhã</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D6D3D1" stroke-width="1.5" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                    <input 
+                                    type="radio" 
+                                    name="study-shift" 
+                                    id="evening"
+                                    value="evening "
+                                    >
+                                    <img src="assets/icons/sun-cloud-02.svg" alt="">
+                                    <label for="morning">Tarde</label>
+                                </div>
+                            </div>
+
                         </div>
                     </fieldset>
                 </form>
