@@ -89,3 +89,73 @@ textarea {
        }
     }
 }
+
+label + .radio-wrapper {
+    margin-top: 1rem;
+}
+
+.radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1rem;
+}
+
+.radio-inner {
+    border: 1px solid var(--stroke-default);
+    border-radius: 0.5rem;
+
+    position: relative;
+    padding: 1.5rem;
+    cursor: pointer;
+    
+
+    display: grid;
+    justify-content: center;
+
+     .radio-image {
+            background-image: url(../assets/icons/circle-0.png);
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            inset: 1rem;
+        }
+
+    
+    &:has(input:focus, input:checked) {
+        outline: .25rem solid var(--surface-secondary);
+        border: .125rem solid var(--stroke-highlight);
+
+        .radio-image {
+            background-image: url(../assets/icons/checkmark-circle-01.png);
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            inset: 1rem;
+
+        
+        }
+        
+    }
+     &:hover {
+        border: 1px solid var(--stroke-highlight);
+        outline-offset: .1px;
+
+        .radio-image {
+            background-image: url(../assets/icons/circle.png);
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            inset: 1rem;
+        }
+        
+     }
+
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+}
