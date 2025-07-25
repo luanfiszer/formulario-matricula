@@ -52,7 +52,7 @@
                             class="form-control" 
                             type="text" 
                             placeholder="Qual o nome da criança"
-                            required>
+                            >
                         </div>
                         <div class="input-wrapper ">
                             <label for="birth">Data de Nascimento</label>
@@ -60,7 +60,7 @@
                             id="birth" 
                             class="form-control calendar" type="date" 
                             lang="pt-br"
-                            required>
+                            >
                         </div>
                         <div class="input-wrapper">
                             <label for="gender">Sexo</label>
@@ -68,7 +68,7 @@
                             id="gender" 
                             class="form-control"
                             name="gender"
-                            required>
+                            >
                                 <option value="male">Masculino</option>
                                 <option value="female">Feminino</option>option>
                                 <option value="no">Prefiro não responder</option>
@@ -90,7 +90,7 @@
                                 class="form-control" 
                                 type="file"
                                 name="birth-file"
-                                required>
+                                >
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.9552 18.0221C34.97 18.022 34.985 18.022 35 18.022C39.9706 18.022 44 22.0588 44 27.0386C44 31.6796 40.5 35.5016 36 36M34.9552 18.0221C34.9848 17.6921 35 17.3579 35 17.0202C35 10.9339 30.0752 6 24 6C18.2465 6 13.5247 10.4253 13.0408 16.0638M34.9552 18.0221C34.7506 20.2952 33.8572 22.3692 32.4856 24.033M13.0408 16.0638C7.96796 16.5475 4 20.8278 4 26.0366C4 30.8834 7.43552 34.9264 12 35.8546M13.0408 16.0638C13.3565 16.0337 13.6765 16.0183 14 16.0183C16.2516 16.0183 18.3295 16.7639 20.001 18.022" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -113,7 +113,7 @@
                             inputmode="numeric"
                             autocomplete="postal-code"
                             oninput="mascaraCep(this)"
-                            required>
+                            >
                         </div>
 
                         <div class="grid grid-col gap-20">
@@ -124,7 +124,8 @@
                             class="form-control capitalize"
                             type="text"
                             name="street" 
-                            placeholder="Rua das Flores">
+                            placeholder="Rua das Flores"
+                            >
                             </div>
                             <div>
                                 <label for="address-number">Número</label>
@@ -136,6 +137,7 @@
                                 inputmode="numeric"
                                 autocomplete="address-level2"
                                 placeholder="123"
+                                
                                 >
                             </div>
                             <div class="input-wrapper">
@@ -146,7 +148,8 @@
                             type="text"
                             name="city"
                             autocomplete="address-level2"
-                            placeholder="São Paulo">
+                            placeholder="São Paulo"
+                            >
                             </div>
                             <div class="input-wrapper">
                             <label for="state">Estado</label>
@@ -158,11 +161,46 @@
                             maxlength="2"
                             autocomplete="address-level1"
                             placeholder="SP">
+                            
                             </div>
                         </div>
 
                     </fieldset>
-                    
+                    <fieldset>
+                        <legend class="text-heading3 text-primary m-bottom-24">Informaçõesdo responsável</legend>
+                        <div>
+                            <label for="guardian-name">Nome do responsável</label>
+                            <input 
+                            type="text"
+                            id="guardian-name"
+                            class="form-control capitalize"
+                            name="guardian-name"
+                            
+                            >
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+                        <div>
+                            <label for="phone">Telefone</label>
+                            <input 
+                            type="text"
+                            id="phone"
+                            class="form-control"
+                            name="phone"
+                            inputmode="tel"
+                            
+                            >
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="mail">E-mail</label>
+                            <input 
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            class="form-control"
+                            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required>
+                        </div>
+                    </fieldset>
                 </form>
             </section>
         </main>

@@ -62,8 +62,42 @@ body {
         outline: .25rem solid var(--surface-secondary);
         border: .125rem solid var(--stroke-highlight);
         outline-offset: .1px;
+        
+        
+    }
+
+    &:invalid:focus {
+        border: .125rem solid var(--semantic-error);
+        outline: 0;
+        
+        
+        
     }
 }
 
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
+.input-wrapper::after {
+  content: " Insira um email válido";
+  display: none;
+  color: red;
+  font: var(--text-sm, 0.875rem/1.25rem);
+  padding-left: 1.5rem;
+  background: url(../assets/icons/alert-circle.svg) no-repeat left center;
+  background-size: 1rem;
+  margin-top: .25rem;
+  line-height: 1.2;
+}
+
+.input-wrapper:has(input:invalid:focus)::after {
+  display: block
+}
+
+.input-wrapper:has(input:valid)::after {
+  display: none;
+}
