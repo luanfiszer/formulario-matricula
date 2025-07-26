@@ -166,11 +166,17 @@ label + .radio-wrapper {
     font-weight: 500;
     }
 
+    .checkbox-wrapper {
+        display: grid;
+        grid-template-columns: 1.4rem auto;
+        gap: .5rem;
+    }
+    
     .checkbox-image {
         position: relative;
 
-        background-image: url(../assets/icons/square.png);
-        width: 2rem;
+        background-image: url(../assets/icons/square.png) ;
+        width: 1.4rem;
         height: 1.4rem;
         
         & [type="checkbox"] {
@@ -181,14 +187,14 @@ label + .radio-wrapper {
         }
 
         &:hover {
-            background-image: url(../assets/icons/Vector.png);
-            width: 2rem;
+            background-image: url(../assets/icons/Vector.png) ;
+            width: 1.4rem;
             height: 1.4rem;
         }
 
         &:has(input:checked) {
-            background-image: url(../assets/icons/Vector-1.png);
-            width: 2rem;
+            background-image: url(../assets/icons/Vector-1.png) ;
+            width: 1.4rem;
             height: 1.4rem;
         }
     }
