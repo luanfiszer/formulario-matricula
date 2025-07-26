@@ -197,4 +197,47 @@ label + .radio-wrapper {
             width: 1.4rem;
             height: 1.4rem;
         }
+}
+
+.style-button {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    cursor: pointer;
+
+    .save {
+        position: relative;
+        border: 1px solid var(--stroke-highlight);
+        border-radius: .5rem;
+        padding: .75rem 1.5rem;
+       
+        & button {
+            font: 500 var(--text-sm)/1.4 var(--font-family);
+            color: var(--text-highlight);
+
+        } 
+
     }
+
+    .submit {
+        position: relative;
+        background-color: var(--brand-dark);
+        border-radius: .5rem;
+        padding: .75rem 1.5rem;
+
+        & button {
+            font: 500 var(--text-sm)/1.4 var(--font-family);
+            color: var(--surface-primary);
+
+        } 
+    }
+    
+    button {
+        position: absolute;
+        inset: 0;
+        all: unset;
+    }
+    .save {
+
+    }
+}
