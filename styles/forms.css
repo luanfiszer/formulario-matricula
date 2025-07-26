@@ -160,3 +160,35 @@ label + .radio-wrapper {
         inset: 0;
     }
 }
+
+    
+    span.text-highlight {
+    font-weight: 500;
+    }
+
+    .checkbox-image {
+        position: relative;
+
+        background-image: url(../assets/icons/square.png);
+        width: 2rem;
+        height: 1.4rem;
+        
+        & [type="checkbox"] {
+            all: unset;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        &:hover {
+            background-image: url(../assets/icons/Vector.png);
+            width: 2rem;
+            height: 1.4rem;
+        }
+
+        &:has(input:checked) {
+            background-image: url(../assets/icons/Vector-1.png);
+            width: 2rem;
+            height: 1.4rem;
+        }
+    }
